@@ -1,0 +1,292 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+ /*new css*/
+
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Playfair+Display');*/
+
+
+
+/*@import url('href=""https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"');*/
+
+body {
+    background-color: #EEF3F6;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+/*body {
+    background-color: #EEF3F6;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+}*/
+
+
+.textLanding {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-right: 550px;
+    line-height: 45px;
+    margin-top: 170px;
+}
+
+.registerHome {
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+.rescaleImage {
+    height: 90px;
+    width: 90px;
+}
+
+.alignItems {
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.headerSnacks {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.cardHolder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px;
+    margin-top: -70px;
+}
+
+.cardStyles {
+    margin: 20px;
+}
+
+.addASnackButton {
+    text-align: center;
+}
+
+.snackText {
+    color: white;
+}
+
+    .snackText:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+.contactParagraph {
+    line-height: 30px;
+}
+
+.formLength {
+    max-width: 30%;
+}
+
+.textLength {
+    max-width: 50%;
+}
+
+.inputSpacing {
+    padding-bottom: 20px;
+}
+
+.snackButtonCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.cardText {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cardButton {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.landingButtons {
+    margin-left: 225px;
+}
+
+.orButton {
+    margin-left: 55px;
+}
+
+.bottomButton {
+    margin-left: 10px;
+}
+
+.landingImage {
+    margin-top: -570px;
+    margin-left: 400px;
+}
+
+.searchInput {
+    border-radius: 7px;
+    border: 0;
+    padding: 5px;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.allSnacks {
+    margin-left: 10px;
+    margin-top: 30px
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px
+}
+
+
+.sendMessageButton {
+    margin-top: 10px;
+}
+
+.logoHeader {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-left: -70px;
+}
+
+.navPadding {
+    padding-top: 20px;
+}
+
+.contentLanding {
+    margin-top: -75px;
+}
+
+.loginContent {
+    margin-top: 75px;
+}
+
+.reecesPic {
+    margin-bottom: 80px;
+}
+
+.loginImage {
+    margin-top: -637px;
+}
+
+.registerImage {
+    margin-top: -827px;
+}
+
+.navLinks {
+    margin-top: 20px;
+    margin-right: 400px;
+}
+
+.navBarStyles {
+    background-color: #EEF3F6;
+}
+
+.vendingButton {
+    margin-left: -44px;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+
