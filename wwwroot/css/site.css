@@ -78,20 +78,21 @@ body {
     height: 90px;
     width: 90px;
 }
-
+/* centers text over cards*/
 .alignItems {
     text-align: center;
     padding-top: 10px;
     margin: 10px;
 }
 
-.headerSnacks {
+/*.headerSnacks {
     padding: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-}
+}*/
 
+/* spaces cards evenly on page*/
 .cardHolder {
     display: flex;
     justify-content: space-between;
@@ -100,6 +101,7 @@ body {
     margin-top: -70px;
 }
 
+/*keeps cards spaced evenly along with above cardHolder*/
 .cardStyles {
     margin: 20px;
 }
@@ -108,35 +110,35 @@ body {
     text-align: center;
 }
 
-.snackText {
+/*.snackText {
     color: white;
-}
+}*/
 
-    .snackText:hover {
+    /*.snackText:hover {
         text-decoration: none;
         color: white;
-    }
+    }*/
 
-.contactParagraph {
+/*.contactParagraph {
     line-height: 30px;
-}
+}*/
 
-.formLength {
+/*.formLength {
     max-width: 30%;
-}
+}*/
 
-.textLength {
+/*.textLength {
     max-width: 50%;
-}
+}*/
 
-.inputSpacing {
+/*.inputSpacing {
     padding-bottom: 20px;
-}
+}*/
 
-.snackButtonCenter {
+/*.snackButtonCenter {
     display: flex;
     justify-content: center;
-}
+}*/
 
 .cardText {
     font-size: 20px;
@@ -148,41 +150,41 @@ body {
     font-weight: 300;
 }
 
-.landingButtons {
+/*.landingButtons {
     margin-left: 225px;
-}
+}*/
 
-.orButton {
+/*.orButton {
     margin-left: 55px;
-}
+}*/
 
-.bottomButton {
+/*.bottomButton {
     margin-left: 10px;
-}
+}*/
 
-.landingImage {
+/*.landingImage {
     margin-top: -570px;
     margin-left: 400px;
-}
+}*/
 
-.searchInput {
+/*.searchInput {
     border-radius: 7px;
     border: 0;
     padding: 5px;
     width: 40%;
     margin-right: 20px;
-}
+}*/
 
-.allSnacks {
+/*.allSnacks {
     margin-left: 10px;
     margin-top: 30px
-}
+}*/
 
-.searchContainer {
+/*.searchContainer {
     display: flex;
     justify-content: flex-end;
     margin-top: -40px
-}
+}*/
 
 
 .sendMessageButton {
