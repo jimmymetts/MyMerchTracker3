@@ -85,12 +85,12 @@ body {
     margin: 10px;
 }
 
-/*.headerSnacks {
+.headerSnacks {
     padding: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-}*/
+}
 
 /* spaces cards evenly on page*/
 .cardHolder {
@@ -123,17 +123,17 @@ body {
     line-height: 30px;
 }*/
 
-/*.formLength {
+.formLength {
     max-width: 30%;
-}*/
+}
 
-/*.textLength {
+.textLength {
     max-width: 50%;
-}*/
+}
 
-/*.inputSpacing {
+.inputSpacing {
     padding-bottom: 20px;
-}*/
+}
 
 /*.snackButtonCenter {
     display: flex;
@@ -187,9 +187,9 @@ body {
 }*/
 
 
-.sendMessageButton {
+/*.sendMessageButton {
     margin-top: 10px;
-}
+}*/
 
 .logoHeader {
     font-family: 'Playfair Display', serif;

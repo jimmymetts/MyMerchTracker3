@@ -32,7 +32,7 @@ namespace MyMerchTracker3.Models
         public MerchType MerchType { get; set; }
 
         public int? Quantity { get; set; }
-
+ 
 
         [Display(Name = "Small")]
         public int? Small { get; set; }
