@@ -85,6 +85,10 @@ namespace MyMerchTracker3.Controllers
         
 public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,ApplicationUserId,ImagePath,MerchTypeId,Quantity,Small,Medium,Large,Xlarge,Xxlarge,AllSize")] Merch merch)
         {
+            var user = await GetCurrentUserAsync();
+            merch.ApplicationUserId = user.Id;
+
+            ModelState.Remove("ApplicationUserId");
             if (ModelState.IsValid)
             {
                 _context.Add(merch);
