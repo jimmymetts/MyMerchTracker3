@@ -56,7 +56,6 @@ namespace MyMerchTracker3.Controllers
 
             var merch = await _context.Merch
                 .Include(m => m.MerchType)
-                //.Include(m => m.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (merch == null)
             {
@@ -78,11 +77,7 @@ namespace MyMerchTracker3.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-
-
-
-        
+        [ValidateAntiForgeryToken]      
 public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,ApplicationUserId,ImagePath,MerchTypeId,Quantity,Small,Medium,Large,Xlarge,Xxlarge,AllSize")] Merch merch)
         {
             var user = await GetCurrentUserAsync();

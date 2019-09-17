@@ -29,12 +29,12 @@ body {
 }
 
 /* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
     }
-}
+}*/
 
 
  /*new css*/
@@ -110,18 +110,18 @@ body {
     text-align: center;
 }
 
-/*.snackText {
+.snackText {
     color: white;
-}*/
+}
 
-    /*.snackText:hover {
+    .snackText:hover {
         text-decoration: none;
         color: white;
-    }*/
+    }
 
-/*.contactParagraph {
+.contactParagraph {
     line-height: 30px;
-}*/
+}
 
 .formLength {
     max-width: 30%;
@@ -150,46 +150,52 @@ body {
     font-weight: 300;
 }
 
-/*.landingButtons {
+/* hide shirts sizes when id is other than 1(shirts)*/
+
+.hide {
+    display: none;
+}
+
+.landingButtons {
     margin-left: 225px;
-}*/
+}
 
-/*.orButton {
+.orButton {
     margin-left: 55px;
-}*/
+}
 
-/*.bottomButton {
+.bottomButton {
     margin-left: 10px;
-}*/
+}
 
-/*.landingImage {
+.landingImage {
     margin-top: -570px;
     margin-left: 400px;
-}*/
+}
 
-/*.searchInput {
+.searchInput {
     border-radius: 7px;
     border: 0;
     padding: 5px;
     width: 40%;
     margin-right: 20px;
-}*/
+}
 
-/*.allSnacks {
+.allSnacks {
     margin-left: 10px;
     margin-top: 30px
-}*/
+}
 
-/*.searchContainer {
+.searchContainer {
     display: flex;
     justify-content: flex-end;
     margin-top: -40px
-}*/
+}
 
 
-/*.sendMessageButton {
+.sendMessageButton {
     margin-top: 10px;
-}*/
+}
 
 .logoHeader {
     font-family: 'Playfair Display', serif;
@@ -289,6 +295,12 @@ body {
     /* Set the fixed height of the footer here */
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
+}
+
+
+
+.hide {
+    display: none;
 }
 
 
