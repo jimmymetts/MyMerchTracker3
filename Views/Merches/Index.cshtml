@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>MyShirts</h2>
+<h2>Merch</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -14,25 +14,85 @@
 
     @foreach (var item in Model)
     {
+         if (
+                      item.MerchTypeId == 1)
+            {
+                <div class="cardStyles">
+                    <div class="card" style="width: 11rem; height:15rem;">
+                        <div class="alignItems">
+                            <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
+                            <img class="card-img-top rescaleImage" src="~/images/tshirtIcon.png">
 
+                            <div class="card-body">
+                                <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
+                            </div>
 
-        <div class="cardStyles">
-            <div class="card" style="width: 11rem; height:15rem;">
-                <div class="alignItems">
-                    <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
-                    <img class="card-img-top rescaleImage">
+                        </div>
 
-                    <div class="card-body">
-                        <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id">Details</a>
                     </div>
 
                 </div>
 
-            </div>
+            }
+            else if (item.MerchTypeId == 2)
+            {
+                <div class="cardStyles">
+                    <div class="card" style="width: 11rem; height:15rem;">
+                        <div class="alignItems">
+                            <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
+                            <img class="card-img-top rescaleImage" src="~/images/cap-icon.jpg">
 
-        </div>
+                            <div class="card-body">
+                                <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+            else
+            {
+                <div class="cardStyles">
+                    <div class="card" style="width: 11rem; height:15rem;">
+                        <div class="alignItems">
+                            <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
+                            <img class="card-img-top rescaleImage" src="~/images/keyChain.jpg">
+
+                            <div class="card-body">
+                                <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+        }
+
+
     }
 </div>
+<script>
+    /* code that hides long form unless shirts id is selected*/
+
+    const dropDown = document.getElementById("typeForm");
+    dropDown.addEventListener("change", (e) => {
+
+                if (e.target.value === "1") {
+            const sizeDiv = document.getElementById("sizes");
+            sizeDiv.classList.remove("hide");
+        }
+
+        if (e.target.value !== "1") {
+            const sizeDiv = document.getElementById("sizes");
+            sizeDiv.classList.add("hide");
+        }
+    })
+</script>
 
 
 

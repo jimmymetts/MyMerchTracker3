@@ -15,7 +15,7 @@
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="MerchTypeId" class="control-label"></label>
-                <select asp-for="MerchTypeId" class="form-control" asp-items="ViewBag.MerchTypeId"></select>
+                <select id="typeForm" asp-for="MerchTypeId" class="form-control" asp-items="ViewBag.MerchTypeId" ></select>
                 <span asp-validation-for="MerchTypeId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -49,6 +49,7 @@
                 <input asp-for="AllSize" class="form-control" />
                 <span asp-validation-for="AllSize" class="text-danger"></span>
             </div>
+        <div id="sizes">
             <div class="form-group">
                 <label asp-for="Small" class="control-label"></label>
                 <input asp-for="Small" class="form-control" />
@@ -74,6 +75,7 @@
                 <input asp-for="Xxlarge" class="form-control" />
                 <span asp-validation-for="Xxlarge" class="text-danger"></span>
             </div>
+        </div>
 
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
@@ -85,6 +87,25 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
+<script>
+    /* code that hides long form unless shirts id is selected*/
+
+    const dropDown = document.getElementById("typeForm");
+    //dropDown.addEventListener("change", (e) => {
+
+    //if (dropDown.value === "1") {
+    //        const sizeDiv = document.getElementById("sizes");
+    //        sizeDiv.classList.remove("hide");
+    //    }
+
+    if (dropDown.value !== "1") {
+            const sizeDiv = document.getElementById("sizes");
+            sizeDiv.classList.add("hide");
+        }
+    
+
+</script>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
