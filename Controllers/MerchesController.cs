@@ -83,6 +83,9 @@ public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,Ap
             var user = await GetCurrentUserAsync();
             merch.ApplicationUserId = user.Id;
 
+        
+
+
             ModelState.Remove("ApplicationUserId");
             if (ModelState.IsValid)
             {

@@ -54,38 +54,40 @@
         <dd>
             @Html.DisplayFor(model => model.AllSize)
         </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Small)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Small)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Medium)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Medium)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Large)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Large)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Xlarge)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Xlarge)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Xxlarge)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Xxlarge)
-        </dd>
-
-    </dl>
+        @if (Model.MerchType.Title == "Shirt")
+        {
+            <dt>
+                @Html.DisplayNameFor(model => model.Small)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Small)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Medium)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Medium)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Large)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Large)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Xlarge)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Xlarge)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Xxlarge)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Xxlarge)
+            </dd>
+        }
+        </dl>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />

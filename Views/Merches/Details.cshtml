@@ -35,57 +35,63 @@
             @Html.DisplayFor(model => model.User.Id)
         </dd>*@
         <dt>
-            @Html.DisplayNameFor(model => model.ImagePath)
+            @*@Html.DisplayNameFor(model => model.ImagePath)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.ImagePath)
-        </dd>
+        </dd>*@
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Quantity)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Small)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Small)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Medium)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Medium)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Large)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Large)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Xlarge)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Xlarge)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Xxlarge)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Xxlarge)
-        </dd>
-        @*<dt>
-            @Html.DisplayNameFor(model => model.AllSize)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.AllSize)
         </dd>*@
-    </dl>
+
+        @if (Model.MerchType.Title == "Shirt") {
+       
+            <dt>
+                @Html.DisplayNameFor(model => model.Small)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Small)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Medium)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Medium)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Large)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Large)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Xlarge)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Xlarge)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Xxlarge)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Xxlarge)
+            </dd>
+            }
+            <dt>
+                @Html.DisplayNameFor(model => model.AllSize)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.AllSize)
+            </dd>
+          
+        </dl>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a> |
     <a asp-action="Index">Back to List</a>
 </div>
