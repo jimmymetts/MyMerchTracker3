@@ -4,17 +4,29 @@
     ViewData["Title"] = "Create";
 }
 
+@*<script>
+    if (
+        item.MerchTypeId == 1) {
+        if (e.target.value === "1") {
+
+            const sizeDiv = document.getElementById("allSize");
+            sizeDiv.classList.add("hide");
+
+        }
+</script>*@
+
 <h2>Create</h2>
 
 <h4>Merch</h4>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
 
-            <div class="form-group" >
+            <div class="form-group">
                 <label asp-for="MerchTypeId" class="control-label"></label>
                 <select asp-for="MerchTypeId" class="form-control" asp-items="ViewBag.MerchTypeId" id="typeForm"></select>
             </div>
@@ -35,20 +47,23 @@
                 <select asp-for="ApplicationUserId" class="form-control" asp-items="ViewBag.ApplicationUserId"></select>
             </div>
 
-            <div class="form-group">
-                <label asp-for="ImagePath" class="control-label"></label>
-                <input asp-for="ImagePath" class="form-control" />
-                <span asp-validation-for="ImagePath" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Quantity" class="control-label"></label>
-                <input asp-for="Quantity" class="form-control" />
-                <span asp-validation-for="Quantity" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="AllSize" class="control-label"></label>
-                <input asp-for="AllSize" class="form-control" />
-                <span asp-validation-for="AllSize" class="text-danger"></span>
+            @*<div class="form-group">
+                    <label asp-for="ImagePath" class="control-label"></label>
+                    <input asp-for="ImagePath" class="form-control" />
+                    <span asp-validation-for="ImagePath" class="text-danger"></span>
+                </div>*@
+            @*<div class="form-group">
+                    <label asp-for="Quantity" class="control-label"></label>
+                    <input asp-for="Quantity" class="form-control" />
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>*@
+
+            <div id="allSize">
+                <div class="form-group">
+                    <label asp-for="AllSize" class="control-label"></label>
+                    <input asp-for="AllSize" class="form-control" />
+                    <span asp-validation-for="AllSize" class="text-danger"></span>
+                </div>
             </div>
             <div id="sizes">
                 <div class="form-group">
@@ -90,20 +105,26 @@
 </div>
 <script>
     /* code that hides long form unless shirts id is selected*/
+    const allSize = document.getElementById("allSize");
+    allSize.classList.add("hide")
 
-    //const dropDown = document.getElementById("typeForm");
-    //dropDown.addEventListener("change", (e) => {
+    const dropDown = document.getElementById("typeForm");
+    dropDown.addEventListener("change", (e) => {
 
-    //            if (e.target.value === "1") {
-    //        const sizeDiv = document.getElementById("sizes");
-    //        sizeDiv.classList.remove("hide");
-    //    }
-         
-    //    if (e.target.value !== "1") {
-    //        const sizeDiv = document.getElementById("sizes");
-    //        sizeDiv.classList.add("hide");
-    //    }
-    //})
+        if (e.target.value === "1") {
+            const sizeDiv = document.getElementById("sizes");
+            sizeDiv.classList.remove("hide");
+            const allSize = document.getElementById("allSize");
+            allSize.classList.add("hide")
+        }
+
+        if (e.target.value !== "1") {
+            const sizeDiv = document.getElementById("sizes");
+            sizeDiv.classList.add("hide");
+            const allSize = document.getElementById("allSize");
+            allSize.classList.remove("hide")
+        }
+    })
 </script>
 
 @section Scripts {

@@ -10,6 +10,7 @@
     <h4>Merch</h4>
     <hr />
     <dl class="dl-horizontal">
+
         <dt>
             @Html.DisplayNameFor(model => model.MerchType)
         </dt>
@@ -36,20 +37,24 @@
         </dd>*@
         <dt>
             @*@Html.DisplayNameFor(model => model.ImagePath)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ImagePath)
-        </dd>*@
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ImagePath)
+            </dd>*@
 
-        @*<dt>
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>*@
+            @*<dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>*@
 
-        @if (Model.MerchType.Title == "Shirt") {
-       
+            @*/* below line shows small-xxl sizes only when Shirt is selected */*@
+
+            @if (Model.MerchType.Title == "Shirt")
+
+            {
+
             <dt>
                 @Html.DisplayNameFor(model => model.Small)
             </dt>
@@ -81,13 +86,15 @@
                 @Html.DisplayFor(model => model.Xxlarge)
             </dd>
             }
+            else
+            {
             <dt>
                 @Html.DisplayNameFor(model => model.AllSize)
             </dt>
             <dd>
                 @Html.DisplayFor(model => model.AllSize)
             </dd>
-          
+            }
         </dl>
 </div>
 <div>

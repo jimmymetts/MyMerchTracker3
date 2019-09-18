@@ -8,10 +8,13 @@ dropDown.addEventListener("change", (e) => {
     if (e.target.value === "1") {
         const sizeDiv = document.getElementById("sizes");
         sizeDiv.classList.remove("hide");
+        const allSize = document.getElementById("allSize");
+        allSize.classList.add("hide")
     }
 
     if (e.target.value !== "1") {
         const sizeDiv = document.getElementById("sizes");
         sizeDiv.classList.add("hide");
     }
+       
 })
