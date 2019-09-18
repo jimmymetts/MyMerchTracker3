@@ -49,7 +49,7 @@ namespace MyMerchTracker3.Models
         [Display(Name = "XXLarge")]
         public int? Xxlarge { get; set; }
 
-        [Display(Name = "All Size")]
+        [Display(Name = "Quantity")]
         public string AllSize { get; set; }
 
 

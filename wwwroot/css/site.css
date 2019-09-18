@@ -3,6 +3,7 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #DDDFE1 /*all pages background color*/
 }
 
 /* Wrapping element */
@@ -34,7 +35,7 @@ body {
     .carousel-caption {
         display: none;
     }
-}*/
+
 
 
  /*new css*/
@@ -49,17 +50,20 @@ for details on configuring this project to bundle and minify static web assets. 
 
 /*@import url('href=""https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"');*/
 
-body {
+@import url('href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet') ;
+
+/*body {
     background-color: #EEF3F6;
-    font-family: 'Anton', sans-serif;
+    font-family:'Anton', sans-serif;
     font-weight: bold;
-}
+}*/
+
+
 /*body {
     background-color: #EEF3F6;
     font-family: 'Anton', sans-serif;
     font-weight: 300;
 }*/
-
 
 .textLanding {
     font-family: 'Montserrat', sans-serif;
@@ -85,12 +89,12 @@ body {
     margin: 10px;
 }
 
-.headerSnacks {
+/*.headerSnacks {
     padding: 20px;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
-}
+}*/
 
 /* spaces cards evenly on page*/
 .cardHolder {
@@ -106,40 +110,41 @@ body {
     margin: 20px;
 }
 
-.addASnackButton {
+/*.addASnackButton {
     text-align: center;
-}
+}*/
 
-.snackText {
+/*.snackText {
     color: white;
-}
+}*/
 
-    .snackText:hover {
+    /*.snackText:hover {
         text-decoration: none;
         color: white;
-    }
+    }*/
 
-.contactParagraph {
+/*.contactParagraph {
     line-height: 30px;
-}
+}*/
 
-.formLength {
+/*.formLength {
     max-width: 30%;
-}
+}*/
 
 .textLength {
     max-width: 50%;
 }
 
-.inputSpacing {
+/*.inputSpacing {
     padding-bottom: 20px;
-}
+}*/
 
 /*.snackButtonCenter {
     display: flex;
     justify-content: center;
 }*/
 
+/* adjusts font size on cards */
 .cardText {
     font-size: 20px;
     font-weight: 300;
@@ -156,46 +161,46 @@ body {
     display: none;
 }
 
-.landingButtons {
+/*.landingButtons {
     margin-left: 225px;
-}
+}*/
 
-.orButton {
+/*.orButton {
     margin-left: 55px;
-}
+}*/
 
-.bottomButton {
+/*.bottomButton {
     margin-left: 10px;
-}
+}*/
 
 .landingImage {
     margin-top: -570px;
     margin-left: 400px;
 }
 
-.searchInput {
+/*.searchInput {
     border-radius: 7px;
     border: 0;
     padding: 5px;
     width: 40%;
     margin-right: 20px;
-}
+}*/
 
-.allSnacks {
+/*.allSnacks {
     margin-left: 10px;
     margin-top: 30px
-}
+}*/
 
-.searchContainer {
+/*.searchContainer {
     display: flex;
     justify-content: flex-end;
     margin-top: -40px
-}
+}*/
 
 
-.sendMessageButton {
+/*.sendMessageButton {
     margin-top: 10px;
-}
+}*/
 
 .logoHeader {
     font-family: 'Playfair Display', serif;
@@ -203,48 +208,48 @@ body {
     margin-left: -70px;
 }
 
-.navPadding {
+/*.navPadding {
     padding-top: 20px;
-}
+}*/
 
-.contentLanding {
+/*.contentLanding {
     margin-top: -75px;
-}
+}*/
 
-.loginContent {
+/*.loginContent {
     margin-top: 75px;
-}
+}*/
 
-.reecesPic {
+/*.reecesPic {
     margin-bottom: 80px;
-}
+}*/
 
-.loginImage {
+/*.loginImage {
     margin-top: -637px;
-}
+}*/
 
-.registerImage {
+/*.registerImage {
     margin-top: -827px;
-}
+}*/
 
-.navLinks {
+/*.navLinks {
     margin-top: 20px;
     margin-right: 400px;
-}
+}*/
 
-.navBarStyles {
+/*.navBarStyles {
     background-color: #EEF3F6;
-}
+}*/
 
-.vendingButton {
+/*.vendingButton {
     margin-left: -44px;
-}
+}*/
 
-a.navbar-brand {
+/*a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-}
+}*/
 
 /* Sticky footer styles
 -------------------------------------------------- */

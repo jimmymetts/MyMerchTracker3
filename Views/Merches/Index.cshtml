@@ -14,64 +14,67 @@
 
     @foreach (var item in Model)
     {
-          if (
-                      item.MerchTypeId == 1)
-            {
-                <div class="cardStyles">
-                    <div class="card" style="width: 11rem; height:15rem;">
-                        <div class="alignItems">
-                            <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
-                            <img class="card-img-top rescaleImage" src="~/images/tshirtIcon.png">
+        if (
+                    item.MerchTypeId == 1)
+        {
 
-                            <div class="card-body">
-                                <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
-                            </div>
 
+
+            <div class="cardStyles">
+                <div class="card" style="width: 11rem; height:15rem;">
+                    <div class="alignItems">
+                        <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
+                        <img class="card-img-top rescaleImage" src="~/images/tshirtIcon.png">
+
+                        <div class="card-body">
+                            <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
                         </div>
 
                     </div>
 
                 </div>
 
-            }
-            else if (item.MerchTypeId == 2)
-            {
-                <div class="cardStyles">
-                    <div class="card" style="width: 11rem; height:15rem;">
-                        <div class="alignItems">
-                            <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
-                            <img class="card-img-top rescaleImage" src="~/images/cap-icon.jpg">
+            </div>
 
-                            <div class="card-body">
-                                <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            }
-
-            else
-            {
-                <div class="cardStyles">
-                    <div class="card" style="width: 11rem; height:15rem;">
-                        <div class="alignItems">
-                            <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
-                            <img class="card-img-top rescaleImage" src="~/images/keyChain.jpg">
-
-                            <div class="card-body">
-                                <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            }
         }
+        else if (item.MerchTypeId == 2)
+        {
+            <div class="cardStyles">
+                <div class="card" style="width: 11rem; height:15rem;">
+                    <div class="alignItems">
+                        <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
+                        <img class="card-img-top rescaleImage" src="~/images/baseball.cap.svg">
+
+                        <div class="card-body">
+                            <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+
+        else
+        {
+            <div class="cardStyles">
+                <div class="card" style="width: 11rem; height:15rem;">
+                    <div class="alignItems">
+                        <h5 class="card-title cardText"> @Html.DisplayFor(modelItem => item.MerchDescription)</h5>
+                        <img class="card-img-top rescaleImage" src="~/images/keyChain.jpg">
+
+                        <div class="card-body">
+                            <a class="btn btn-dark cardButton" asp-action="Details" asp-route-id="@item.Id" id="typeForm">Details</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        }
+    }
 
 
     }
