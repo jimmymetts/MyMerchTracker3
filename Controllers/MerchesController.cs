@@ -69,7 +69,7 @@ namespace MyMerchTracker3.Controllers
         public IActionResult Create()
         {
             ViewData["MerchTypeId"] = new SelectList(_context.MerchType, "Id", "Title");
-            ViewData["ApplicationUserId"] = new SelectList(_context.ApplicationUser, "Id", "Id");
+
             return View();
         }
 
@@ -83,9 +83,6 @@ public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,Ap
             var user = await GetCurrentUserAsync();
             merch.ApplicationUserId = user.Id;
 
-        
-
-
             ModelState.Remove("ApplicationUserId");
             if (ModelState.IsValid)
             {
@@ -94,7 +91,7 @@ public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,Ap
                 return RedirectToAction(nameof(Index));
             }
             ViewData["MerchTypeId"] = new SelectList(_context.MerchType, "Id", "Title", merch.MerchTypeId);
-            ViewData["ApplicationUserId"] = new SelectList(_context.ApplicationUser, "Id", "Id", merch.ApplicationUserId);
+           
             return View(merch);
         }
 
@@ -112,7 +109,7 @@ public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,Ap
                 return NotFound();
             }
             ViewData["MerchTypeId"] = new SelectList(_context.MerchType, "Id", "Title", merch.MerchTypeId);
-            ViewData["ApplicationUserId"] = new SelectList(_context.ApplicationUser, "Id", "Id", merch.ApplicationUserId);
+           
             return View(merch);
         }
 
@@ -149,7 +146,7 @@ public async Task<IActionResult> Create([Bind("Id,MerchDescription,MerchPrice,Ap
                 return RedirectToAction(nameof(Index));
             }
             ViewData["MerchTypeId"] = new SelectList(_context.MerchType, "Id", "Title", merch.MerchTypeId);
-            ViewData["ApplicationUserId"] = new SelectList(_context.ApplicationUser, "Id", "Id", merch.ApplicationUserId);
+           
             return View(merch);
         }
 
