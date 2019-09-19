@@ -7,8 +7,8 @@ for details on configuring this project to bundle and minify static web assets. 
     margin:0;
 }
 
-.addMerch{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
 body {
@@ -110,6 +110,16 @@ for details on configuring this project to bundle and minify static web assets. 
     font-size: 15px;
     font-weight: 300;
 }
+
+.card{
+    background-color:#FFF;
+    border-radius:5px;
+}
+
+    .card:hover {
+        transform: scale(1.025);
+        cursor:pointer;
+    }
 
 /* hide shirts sizes when id is other than 1(shirts)*/
 
