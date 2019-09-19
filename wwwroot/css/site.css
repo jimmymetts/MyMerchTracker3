@@ -1,9 +1,22 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+﻿/*/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Playfair+Display');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.addMerch{
+    text-decoration:none;
+}
+
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #DDDFE1 /*all pages background color*/
+    background-color: #F7F7F7; /*all pages background color*/
+    font-family: 'Playfair Display', serif;
+    letter-spacing:3px;
 }
 
 /* Wrapping element */
@@ -11,6 +24,21 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.headerText {
+    font-size: 40px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    letter-spacing:10px;
+}
+
+.landingImage {
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Carousel */
@@ -36,48 +64,16 @@ body {
         display: none;
     }
 
-
-
- /*new css*/
-
-
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Playfair+Display');*/
-
-
-
-/*@import url('href=""https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"');*/
-
-@import url('href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet') ;
-
-/*body {
-    background-color: #EEF3F6;
-    font-family:'Anton', sans-serif;
-    font-weight: bold;
-}*/
-
-
-/*body {
-    background-color: #EEF3F6;
-    font-family: 'Anton', sans-serif;
-    font-weight: 300;
-}*/
-
-.textLanding {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    margin-right: 550px;
-    line-height: 45px;
-    margin-top: 170px;
-}
-
+/*keeps icons in container*/
 .registerHome {
     margin-top: 15px;
     margin-bottom: 16px;
 }
 
+/* sizes pics for card */
 .rescaleImage {
     height: 90px;
     width: 90px;
@@ -88,13 +84,6 @@ for details on configuring this project to bundle and minify static web assets. 
     padding-top: 10px;
     margin: 10px;
 }
-
-/*.headerSnacks {
-    padding: 20px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-}*/
 
 /* spaces cards evenly on page*/
 .cardHolder {
@@ -110,39 +99,6 @@ for details on configuring this project to bundle and minify static web assets. 
     margin: 20px;
 }
 
-/*.addASnackButton {
-    text-align: center;
-}*/
-
-/*.snackText {
-    color: white;
-}*/
-
-    /*.snackText:hover {
-        text-decoration: none;
-        color: white;
-    }*/
-
-/*.contactParagraph {
-    line-height: 30px;
-}*/
-
-/*.formLength {
-    max-width: 30%;
-}*/
-
-.textLength {
-    max-width: 50%;
-}
-
-/*.inputSpacing {
-    padding-bottom: 20px;
-}*/
-
-/*.snackButtonCenter {
-    display: flex;
-    justify-content: center;
-}*/
 
 /* adjusts font size on cards */
 .cardText {
@@ -161,127 +117,22 @@ for details on configuring this project to bundle and minify static web assets. 
     display: none;
 }
 
-/*.landingButtons {
-    margin-left: 225px;
-}*/
-
-/*.orButton {
-    margin-left: 55px;
-}*/
-
-/*.bottomButton {
-    margin-left: 10px;
-}*/
-
-.landingImage {
-    margin-top: -570px;
-    margin-left: 400px;
-}
-
-/*.searchInput {
-    border-radius: 7px;
-    border: 0;
-    padding: 5px;
-    width: 40%;
-    margin-right: 20px;
-}*/
-
-/*.allSnacks {
-    margin-left: 10px;
-    margin-top: 30px
-}*/
-
-/*.searchContainer {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -40px
-}*/
-
-
-/*.sendMessageButton {
-    margin-top: 10px;
-}*/
-
-.logoHeader {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    margin-left: -70px;
-}
-
-/*.navPadding {
-    padding-top: 20px;
-}*/
-
-/*.contentLanding {
-    margin-top: -75px;
-}*/
-
-/*.loginContent {
-    margin-top: 75px;
-}*/
-
-/*.reecesPic {
-    margin-bottom: 80px;
-}*/
-
-/*.loginImage {
-    margin-top: -637px;
-}*/
-
-/*.registerImage {
-    margin-top: -827px;
-}*/
-
-/*.navLinks {
-    margin-top: 20px;
-    margin-right: 400px;
-}*/
-
-/*.navBarStyles {
-    background-color: #EEF3F6;
-}*/
-
-/*.vendingButton {
-    margin-left: -44px;
-}*/
-
-/*a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-}*/
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-    font-size: 14px;
-}
 
+/* keeps icons and text separated and spaced */
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 }
 
-.border-top {
-    border-top: 1px solid #e5e5e5;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
+
+/*controls text and styling*/
 html {
     position: relative;
     min-height: 100%;
@@ -292,20 +143,7 @@ body {
     margin-bottom: 60px;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-}
-
-
 
 .hide {
     display: none;
 }
-
-
